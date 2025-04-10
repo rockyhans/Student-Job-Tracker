@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+📘 Student Job Tracker
+A full-stack web app built to help students track their job applications effortlessly. Users can sign up, add job details (company, role, application status, etc.), update statuses, and filter their job list—all in a beautiful and responsive UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Live Demo
+Frontend: [Vercel Link Here](https://student-job-tracker-virid.vercel.app/)
 
-## Available Scripts
+Backend: [Render API](https://intern-backend-friw.onrender.com)
 
-In the project directory, you can run:
+📸 ![image](https://github.com/user-attachments/assets/f9124960-2dab-40f3-b6c2-0e5f19879fb6)
 
-### `npm start`
+Signup	Dashboard
+⚙️ Tech Stack
+Frontend 🖥️
+React (with Hooks)
+React Router DOM
+Axios
+Custom CSS Modules
+Deployed on Vercel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Backend 🛠️
+Node.js
+Express.js
+MongoDB (MongoDB Atlas)
+JWT for Auth
+Deployed on Render
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🧠 Features
 
-### `npm test`
+✅ User Authentication
+   Signup/Login
+JWT Token-based Authentication
+✅ Job Application Tracker
+    Add job entries with fields: Company, Role, Status, Date, Link
+View all applications in a beautiful UI
+Filter by status or date
+Update job status
+Delete applications
+✅ Protected Routes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📁 Project Structure
+.
+├── client
+│   ├── public
+│   └── src
+│       ├── components
+│       ├── pages
+│       ├── App.js
+│       ├── API.js
+│       └── index.js
+├── server
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   ├── middleware
+│   └── server.js
+🔐 Environment Variables
 
-### `npm run build`
+Create a .env file in server folders.
+Server .env
+env
+PORT=5000
+MONGO_URI=your-mongo-uri
+JWT_SECRET=your-secret-key
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧪 Setup & Installation
+Clone the repo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/your-username/student-job-tracker.git
+cd student-job-tracker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install Backend
+cd server
+npm install
+npm run dev
 
-### `npm run eject`
+Install Frontend
+cd ../client
+npm install
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🛠️ API Endpoints (Sample)
+Method	Endpoint	Description
+POST	/api/auth/signup	Register new user
+POST	/api/auth/login	Login existing user
+GET	/api/jobs	Get user-specific jobs
+POST	/api/jobs	Add a new job
+PUT	/api/jobs/:id	Update job status
+DELETE	/api/jobs/:id	Delete job
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 Future Improvements
+✅ Add search functionality
+✅ Export data to CSV
+✅ Add notifications
+✅ Edit full job details (not just status)
+✅ Add light/dark theme switch
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+👨‍💻 Author
+Made with 💖 by Danish Rizwan
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
