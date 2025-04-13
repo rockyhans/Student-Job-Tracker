@@ -65,7 +65,7 @@ JWT_SECRET=your-secret-key
 🧪 Setup & Installation
 Clone the repo
 
-git clone https://github.com/your-username/student-job-tracker.git
+git clone https://github.com/rockyhans/Student-Job-Tracker.git
 cd student-job-tracker
 
 Install Backend
